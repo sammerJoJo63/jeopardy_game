@@ -1,0 +1,98 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Lusitana&family=Major+Mono+Display&family=Oswald:wght@600&display=swap');
+
+/*
+CALLING FONTS
+
+TITLE FONT
+font-family: 'Lusitana', serif;
+
+CLUE FONT
+font-family: 'Major Mono Display', monospace;
+
+POINT VALUE FONT
+font-family: 'Oswald', sans-serif;
+*/
+
+body {
+	font-family: 'Lusitana', serif !important;
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  margin-bottom: 0 !important;
+  border-radius: 0 !important;
+  color: #fff !important;
+  height: 6vh;
+}
+
+.navbar a {
+  color: #fff !important;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content, .sidenav {
+  min-height: 88vh;
+}
+
+.row.content {
+  background-color: #2b75ed;
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  padding-top: 20px !important;
+  background-color: #2b75ed !important;
+  height: 100% !important;
+}
+
+footer {
+  background-color: #555 !important;
+  color: white !important;
+  padding: 15px !important;
+  height: 6vh;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px !important;) {
+  .sidenav {
+    height: auto !important;
+    padding: 15px !important;
+  }
+  .row.content {
+    height:auto !important;
+  }
+}
+
+
+#jeopardyBoard {
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.cat {
+	font-size: 22px;
+	color: #fff;
+}
+
+.clue {
+	font-size: 32px;
+	color: #e8e000;
+}
+
+.cat, .clue {
+	
+	font-family: 'Oswald', sans-serif;
+	height: 14.666667vh;
+	outline: 2px solid #000;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+}
